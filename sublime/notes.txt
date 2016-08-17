@@ -1,12 +1,7 @@
 Install packages:
-Material Theme - new theme
-Colorsublime - colors for themes
-packageresourceviewer - view and modify installed packages
-advancednewfile - super fast file creation
-Origami - advanced splitting of workspace
-PHP Getters and Setters
 
-1) Fix theme
+
+1) Fix theme (https://laracasts.com/series/sublime-text-mastery/episodes/1)
 Install Material Theme
 	Copy paste in user settings
 Install Colorsublime
@@ -16,7 +11,7 @@ Install firacode https://github.com/tonsky/FiraCode
 Change "font_face" to "Fira Code"
 Hide minimap
 
-2) Most important shortcuts
+2) Most important shortcuts (https://laracasts.com/series/sublime-text-mastery/episodes/2)
 (ctrl+p) change files
 (ctrl+r) find method in file
 (shft+ctrl+r) find method in project  //not working by default?
@@ -25,14 +20,14 @@ Hide minimap
 (ctrl+t,ctrl+t) toggle tabs //custom set up
 
 
-3) Advanced New File
+3) Advanced New File (https://laracasts.com/series/sublime-text-mastery/episodes/3)
 For ubuntu/windows update key bindings 
 (ctrl+alt+n) advanced new file
 start with : to create new file in current direcory
 (shift+ctrl+p) search: ANF gives more options (rename, delete etc)
 view the package default settings for more info
 
-4) Origami splitting
+4) Origami splitting (https://laracasts.com/series/sublime-text-mastery/episodes/4)
 Install Origami package via package control
 Remove ingored package "Vintage"
 Use keybindings
@@ -40,15 +35,15 @@ Use keybindings
 { "keys": [":", "s", "p"], "command": "create_pane", "args": {"direction": "down", "give_focus": true} },
 { "keys": [":", "b", "d"], "command": "destroy_pane", "args": {"direction": "self"} },
 
-5) Multiple cursors
+5) Multiple cursors (https://laracasts.com/series/sublime-text-mastery/episodes/5)
 (ctrl+d), keep tapping "d" for selecting next
 (alt+f3) velger alle occurences i filen
 
-6) Artisan directly from sublime
+6) Artisan directly from sublime (https://laracasts.com/series/sublime-text-mastery/episodes/9)
 Install package laravel 5 artisan
 use (shift+ctrl+p) to search for artisan commands
 
-7) Generate snippets, getters, setters etc
+7) Generate snippets, getters, setters etc (https://laracasts.com/series/sublime-text-mastery/episodes/7)
 Snippet:
 go to Tools>Developer>New Snippet...
 Make your snippet, make it tabtriggered, sett correct scope (source.php), add breakpoints ${1}, add default values ${1:defaultvalue} and have fun

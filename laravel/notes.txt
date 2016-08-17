@@ -83,3 +83,8 @@ grant privileges:
 GRANT ALL PRIVILEGES ON * . * TO 'newuser'@'localhost';
 update privileges:
 FLUSH PRIVILEGES;
+
+Update the .env file with the DB, user, pw
+
+7.2) create migrations
+php artisan make:migration explanatory_name_of_what_migration_do --create=NAME_OF_TABLE
