@@ -4,8 +4,7 @@ Colorsublime - colors for themes
 packageresourceviewer - view and modify installed packages
 advancednewfile - super fast file creation
 Origami - advanced splitting of workspace
-
-
+PHP Getters and Setters
 
 1) Fix theme
 Install Material Theme
@@ -13,6 +12,7 @@ Install Material Theme
 Install Colorsublime
 	Change to Facebook
 Change font to 14
+Install firacode https://github.com/tonsky/FiraCode
 Change "font_face" to "Fira Code"
 Hide minimap
 
@@ -44,10 +44,14 @@ Use keybindings
 (ctrl+d), keep tapping "d" for selecting next
 (alt+f3) velger alle occurences i filen
 
-
-
-
 6) Artisan directly from sublime
 Install package laravel 5 artisan
 use (shift+ctrl+p) to search for artisan commands
+
+7) Generate snippets, getters, setters etc
+Snippet:
+go to Tools>Developer>New Snippet...
+Make your snippet, make it tabtriggered, sett correct scope (source.php), add breakpoints ${1}, add default values ${1:defaultvalue} and have fun
+Install package PHP Getters and Setters
+use (shift+ctrl+p) to generate all getters and setters that are defined in the constructor
 

@@ -44,3 +44,42 @@ return view('test', [
 	'ditt' 	=> $ditt,
 	'datt' 	=> $datt
 ])
+
+4) Controllers.
+Make a controller using artisan:
+php artisan make:controller (for help on this: php artisan help make:controller)
+
+5) layout files
+add a file in top level under views called "laout.blade.php"
+Here you create your laout, and @yield different sections (footer, header, content, sidebar etc)
+Your views must include (@extends('layout')) the layoutfile, and define the content to go in each section as @section('sectionname') @stop (to end the section)
+
+6) Using Gulp, Elixir with sass and js
+run npm install to install the necessary packages
+use the resources/assets/sass/app.scss to generate smart css
+run gulp
+
+advanced:
+version control:
+in the gulpfile.js add this:
+mix.sass('app.scss')
+    	.version('css/app.css');
+this creates a build directory, with a unique css name (for cache-busting on server)
+reference the css file dynamically like this:
+<link href="{{ elixir('css/app.css') }}" rel="stylesheet" type="text/css">
+for production run gulp --production, this minifies etc
+
+when developing run "gulp watch" it keeps an eye out for changes
+
+7) Setting up a DB
+look into config folder for database.php, mysql is default, start by setting up that
+
+7.1) Setting up mysql (https://laracasts.com/series/php-for-beginners/episodes/11)
+sudo apt install mysql-server
+login using root
+create a new user:
+CREATE USER 'newuser'@'localhost' IDENTIFIED BY 'password';
+grant privileges:
+GRANT ALL PRIVILEGES ON * . * TO 'newuser'@'localhost';
+update privileges:
+FLUSH PRIVILEGES;
