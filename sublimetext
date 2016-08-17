@@ -1,0 +1,53 @@
+Install packages:
+Material Theme - new theme
+Colorsublime - colors for themes
+packageresourceviewer - view and modify installed packages
+advancednewfile - super fast file creation
+Origami - advanced splitting of workspace
+
+
+
+1) Fix theme
+Install Material Theme
+	Copy paste in user settings
+Install Colorsublime
+	Change to Facebook
+Change font to 14
+Change "font_face" to "Fira Code"
+Hide minimap
+
+2) Most important shortcuts
+(ctrl+p) change files
+(ctrl+r) find method in file
+(shft+ctrl+r) find method in project  //not working by default?
+(shift+ctrl+p) find anything
+(ctrl+k,ctrl+b) toggle sidebar
+(ctrl+t,ctrl+t) toggle tabs //custom set up
+
+
+3) Advanced New File
+For ubuntu/windows update key bindings 
+(ctrl+alt+n) advanced new file
+start with : to create new file in current direcory
+(shift+ctrl+p) search: ANF gives more options (rename, delete etc)
+view the package default settings for more info
+
+4) Origami splitting
+Install Origami package via package control
+Remove ingored package "Vintage"
+Use keybindings
+{ "keys": [":", "v", "s", "p"], "command": "create_pane", "args": {"direction": "right", "give_focus": true} },
+{ "keys": [":", "s", "p"], "command": "create_pane", "args": {"direction": "down", "give_focus": true} },
+{ "keys": [":", "b", "d"], "command": "destroy_pane", "args": {"direction": "self"} },
+
+5) Multiple cursors
+(ctrl+d), keep tapping "d" for selecting next
+(alt+f3) velger alle occurences i filen
+
+
+
+
+6) Artisan directly from sublime
+Install package laravel 5 artisan
+use (shift+ctrl+p) to search for artisan commands
+

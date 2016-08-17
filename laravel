@@ -1,0 +1,46 @@
+1) Set up
+Installation guide: https://laravel.com/docs/5.2#installation
+Use Composer to install: 
+
+1.1) Install composer
+1.1.1) Download composer
+from here: https://getcomposer.org/download/
+or just run this in terminal:
+php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+This downloads the installer to the current directory
+1.1.2) run the hash verification
+You can then run hash (but get the exact command from the composer download site)
+php -r "if (hash_file('SHA384', 'composer-setup.php') === 'e115a8dc7871f15d853148a7fbac7da27d6c0030b848d9b3dc09e2a0388afed865e6a3d6b3c0fad45c48e2b5fc1196ae') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+1.1.3) run the installer
+php composer-setup.php
+1.1.4) remove the install file
+php -r "unlink('composer-setup.php');"
+1.1.5) Make composer global
+move the .phar file to PATH, i.e:
+mv composer.phar /usr/local/bin/composer
+
+1.2) Install Laravel with composer:
+1.2.1) Install laravel
+composer global require "laravel/installer"
+1.2.2) Make it global
+add "~/.composer/vendor/bin" to your path, i.e 
+vim ~/.bashrc
+add this line to bottom:
+export PATH=$PATH:~/.composer/vendor/bin
+
+2) Creating a project
+run "laravel new [projectname]" (or spark new, if you use spark)
+Look into app/Http/routes.php file, important file for all routes
+Can use anonimous functions or reference controllers. Views are usually loaded, and views are stored in "resources" directory
+default: welcome.blade.php
+Views can be organized in the views folder by creating new folders, and referenced with a dot "." notation or slash "/" notation.
+
+3) Passing data 
+Several options, if you have an array:
+$test = ['en', 'en annen', 'en tredje'];
+return view('test', compact('test')); Using compact is only one of many options.
+return view('test', [
+	'test' 	=> $test,
+	'ditt' 	=> $ditt,
+	'datt' 	=> $datt
+])
