@@ -3,8 +3,10 @@
 	"color_scheme": "Packages/Colorsublime - Themes/Facebook.tmTheme",
 	"font_face": "Fira Code",
 	"font_size": 14,
+	"save_on_focus_lost": true,
 	"ignored_packages":
 	[
+		//Vintage
 	],
 	"indent_guide_options":
 	[
@@ -17,5 +19,5 @@
 	"margin": 0,
 	"overlay_scroll_bars": "enabled",
 	"theme": "Material-Theme.sublime-theme",
-	"use_simple_full_screen": true
+	"use_simple_full_screen": true,
 }

@@ -1,8 +1,11 @@
 [
-	{ "keys": ["ctrl+alt+n"], "command": "advanced_new_file_new"},
-	{ "keys": [":", "v", "s", "p"], "command": "create_pane", "args": {"direction": "right", "give_focus": true} },
-	{ "keys": [":", "s", "p"], "command": "create_pane", "args": {"direction": "down", "give_focus": true} },
-	{ "keys": [":", "b", "d"], "command": "destroy_pane", "args": {"direction": "self"} },
-	{ "keys": ["ctrl+7"], "command": "toggle_comment", "args": { "block": false } },
+	{"keys": ["ctrl+k", "ctrl+m"], "command": "toggle_menu"},
+    {"keys": ["ctrl+k", "ctrl+t"], "command": "toggle_tabs"},
+    { "keys": [":", "v", "s", "p"], "command": "create_pane", "args": {"direction": "right", "give_focus": true} },
+    { "keys": [":", "s", "p"], "command": "create_pane", "args": {"direction": "down", "give_focus": true} },
+    { "keys": [":", "b", "d"], "command": "destroy_pane", "args": {"direction": "self"} },
+    { "keys": ["ctrl+7"], "command": "toggle_comment", "args": { "block": false } },
 	{ "keys": ["ctrl+shift+7"], "command": "toggle_comment", "args": { "block": true } },
+	{ "keys": ["f7"], "command": "insert_php_constructor_property" },
+	{ "keys": ["ctrl+alt+n"], "command": "advanced_new_file_new"},
 ]
