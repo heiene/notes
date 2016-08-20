@@ -1,6 +1,6 @@
 {
 	"bold_folder_labels": true,
-	"color_scheme": "Packages/Colorsublime - Themes/Facebook.tmTheme",
+	//"color_scheme": "Packages/Colorsublime - Themes/Facebook.tmTheme",
 	"font_face": "Fira Code",
 	"font_size": 14,
 	"save_on_focus_lost": true,
